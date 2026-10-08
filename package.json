@@ -1,0 +1,31 @@
+{
+  "name": "abes-goes-latent-voting",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "dev:frontend": "vite --host 0.0.0.0",
+    "dev:backend": "SERVE_FRONTEND=false node server.js",
+    "build": "vite build",
+    "start": "NODE_ENV=production node server.js",
+    "start:api": "NODE_ENV=production SERVE_FRONTEND=false node server.js",
+    "preview": "vite preview --host 0.0.0.0",
+    "load-test": "node scripts/load-test.js",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-react": "^6.1.1",
+    "canvas-confetti": "^1.9.4",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "lucide-react": "^0.546.0",
+    "qrcode.react": "^4.2.0",
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1",
+    "react-router-dom": "^7.18.4",
+    "vite": "^8.3.0"
+  }
+}
